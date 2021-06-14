@@ -19,6 +19,6 @@
         <li><a href="<?php echo url('/dashboard')?>"><em class="fa fa-tachometer">&nbsp;</em>Dashboard</a></li>
         <li><a href="<?php echo url('/inventaris')?>"><em class="fa fa-list">&nbsp;</em>Inventaris</a></li>
         <li><a href="<?php echo url('/habispakai')?>"><em class="fa fa-list-ul">&nbsp;</em>Habis Pakai</a></li>
-        <li><a href=""><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+        <li><a href="#"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
     </ul>
 </div>

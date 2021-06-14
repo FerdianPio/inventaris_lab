@@ -9,7 +9,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view("admin.content.index");
+        return view("admin.content.dashboard.dashboard");
     }
 
     public function inventaris()
