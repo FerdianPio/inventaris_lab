@@ -8,7 +8,7 @@
 	<link href="{{asset('assets/css/font-awesome.min.css')}}" rel="stylesheet">
 	<link href="{{asset('assets/css/datepicker3.css')}}" rel="stylesheet">
 	<link href="{{asset('assets/css/styles.css')}}" rel="stylesheet">
-	
+
 	<!--Custom Font-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<!--[if lt IE 9]>
@@ -19,15 +19,15 @@
 
 <body>
     <!-- Topbar -->
-    @include('admin/topbar');
+    @include('admin/layout/topbar');
     <!-- end Topbar -->
 	<div class="">
 
 	</div>
     <!-- Sidebar -->
-    @include('admin/sidebar');
+    @include('admin/layout/sidebar');
     <!-- end Sidebar -->
-    
+
     <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
         <div class="row">
             <ol class="breadcrumb">
@@ -37,7 +37,7 @@
                 <li class="active">Dashboard</li>
             </ol>
         </div><!--/.row-->
-        
+
             <!--main content-->
             <div class="content">
                 <div class="container-fluid">
@@ -46,11 +46,11 @@
             </div><!--/.content-->
 
             <!--footer-->
-             @include('admin/footer')
+             @include('admin/layout/footer')
             <!--/. end footer-->
         </div> <!--/.row-->
     </div> <!--/.main-->
-    
+
     <script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
@@ -70,6 +70,6 @@
 	});
 };
 	</script>
-		
+
 </body>
 </html>
