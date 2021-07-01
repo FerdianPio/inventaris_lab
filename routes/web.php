@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('admin.content.index');});
+Route::get('/', function () {return view('admin.content.dashboard.dashboard');});
 
     //Route::get('/admin', function () {return view('admin.admin');});
     //Route::get('/dashboard', function () {return view('admin.content.index');});

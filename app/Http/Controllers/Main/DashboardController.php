@@ -3,13 +3,21 @@
 namespace App\Http\Controllers\Main;
 
 use App\Http\Controllers\Controller;
+use App\Models\HabisPakai;
+use App\Models\Inventaris;
+use App\Models\Ruang;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        return view("admin.content.dashboard.dashboard");
+        $data['inventaris'] = Inventaris::count();
+        $data['habispakai'] = HabisPakai::count();
+        $data['ruang'] = Ruang::count();
+        // $data = Inventaris::count();
+
+        return view("admin.content.dashboard.dashboard")->with(['data'=>$data]);
     }
 
     public function inventaris()
